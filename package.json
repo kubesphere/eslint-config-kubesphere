@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-kubesphere",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "license": "MIT",
+  "sideEffects": false,
+  "repository": {
+    "url": "https://github.com/kubesphere/eslint-config-kubesphere.git",
+    "type": "git"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.26.1"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

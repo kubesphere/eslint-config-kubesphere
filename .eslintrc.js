@@ -14,8 +14,8 @@ module.exports = {
     commonjs: true,
     browser: true,
   },
-  extends: ['airbnb-typescript', 'plugin:prettier/recommended', 'prettier/react'],
-  plugins: ['prettier', '@typescript-eslint', 'react', 'babel', 'promise', 'import'],
+  extends: ['airbnb-typescript', 'plugin:prettier/recommended'],
+  plugins: ['@typescript-eslint', 'react', 'babel', 'promise', 'import'],
   settings: {
     react: {
       createClass: 'createReactClass',

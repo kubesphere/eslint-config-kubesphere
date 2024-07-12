@@ -1,12 +1,19 @@
 {
   "name": "eslint-config-kubesphere",
   "version": "1.0.0",
-  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kubesphere/eslint-config-kubesphere.git"
+  },
   "license": "MIT",
   "sideEffects": false,
-  "repository": {
-    "url": "https://github.com/kubesphere/eslint-config-kubesphere.git",
-    "type": "git"
+  "main": ".eslintrc.js",
+  "scripts": {
+    "changeset:add": "changeset add",
+    "release": "changeset version && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.1.0",
@@ -21,7 +28,5 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.1"
-  },
-  "dependencies": {},
-  "devDependencies": {}
+  }
 }

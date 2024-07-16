@@ -1,4 +1,4 @@
-name: Release Snapshot
+name: Release Cnary
 
 on:
   push:
@@ -12,25 +12,27 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Release
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 16
 
-      - name: Install Dependencies
-        run: yarn
+      - name: Install Yarn
+        run: npm install -g yarn
 
-      - name: changeset version
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Version
         run: yarn changeset version --snapshot canary
 
-      - name: Creating .npmrc
+      - name: Create .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
             //registry.npmjs.org/:_authToken=$NPM_TOKEN

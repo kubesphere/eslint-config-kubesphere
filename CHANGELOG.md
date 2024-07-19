@@ -1,5 +1,11 @@
 # eslint-config-kubesphere
 
+## 1.2.0
+
+### Minor Changes
+
+- 8bf6ab9: feat: update Prettier config
+
 ## 1.1.0
 
 ### Minor Changes

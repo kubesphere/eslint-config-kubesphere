@@ -1,5 +1,11 @@
 # eslint-config-kubesphere
 
+## 1.2.1
+
+### Patch Changes
+
+- 1104e6b: feat: revert arrowParens to avoid
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # eslint-config-kubesphere
 
+## 1.2.2
+
+### Patch Changes
+
+- 20bde43: feat: update ESLint config
+
 ## 1.2.1
 
 ### Patch Changes

@@ -14,7 +14,7 @@ module.exports = {
     commonjs: true,
     browser: true,
   },
-  extends: ['airbnb-typescript', 'plugin:prettier/recommended'],
+  extends: ['airbnb-typescript', 'plugin:react-hooks/recommended', 'prettier'],
   plugins: ['@typescript-eslint', 'react', 'babel', 'promise', 'import'],
   settings: {
     react: {
@@ -34,7 +34,8 @@ module.exports = {
       {
         code: 100,
         ignoreComments: true,
-        ignorePattern: '^(\\s*[a-zA-Z_]+: \'[^\']+\'[,;]*)|(.*interpolate.*)|(.*require.*)|(.*_\\.template.*)|(<svg .*)|(<rect .*)|(<polygon .*)$',
+        ignorePattern:
+          "^(\\s*[a-zA-Z_]+: '[^']+'[,;]*)|(.*interpolate.*)|(.*require.*)|(.*_\\.template.*)|(<svg .*)|(<rect .*)|(<polygon .*)$",
         ignoreRegExpLiterals: true,
         ignoreTrailingComments: true,
         ignoreUrls: true,
